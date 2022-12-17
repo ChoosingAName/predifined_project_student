@@ -11,6 +11,9 @@ var SpeechRecognition = window.webkitSpeechRecognition;
   
 var recognition = new SpeechRecognition();
 
+function preload(){
+  apple=loadImage('apple.png');
+}
 function start()
 {
   document.getElementById("status").innerHTML = "System is listening please speak";  
@@ -68,3 +71,4 @@ function speak(){
 
     speak_data = "";
 }
+
